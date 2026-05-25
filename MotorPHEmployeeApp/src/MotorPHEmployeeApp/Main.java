@@ -6,12 +6,13 @@ package MotorPHEmployeeApp;
 
 /**
  *
- * @lrjamrosales-droid
+ * @author Group 21 - ComProg2 - H1101
  */
 public class Main {
     
     public static void main(String[] args) {
-        
+
+        // Launching MotorPHUI Here
         new MotorPHUI();
     }
 }
