@@ -12,4 +12,8 @@ Sharlyn Motas
 
 # Program Details:
 
-This program is a simple payroll system made for MotorPH that allows employees to calculate and view their basic information and monthly payroll, and for the payroll staff, it shows and computes the employee's salary and deductions.
+CP2 - MS1 Source Code
+
+MotorPH Employee App
+
+This program is a simple system that allows users to view employee details, process payroll per pay coverage, and print payslip summaries using a GUI. This program is currently in development as an employee app for MotorPH.
