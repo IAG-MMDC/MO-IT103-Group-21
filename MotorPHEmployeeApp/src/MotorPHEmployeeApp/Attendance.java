@@ -9,7 +9,7 @@ import java.time.LocalTime;
 
 /**
  *
- * @author Group21
+ * @author Group21 - H1101
  */
 public class Attendance {
     
