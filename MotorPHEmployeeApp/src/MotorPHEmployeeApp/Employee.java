@@ -9,7 +9,7 @@ import java.time.format.DateTimeFormatter;
 
 /**
  *
- * @author Home
+ * @author Group 21 - ComProg2 - H1101
  */
 public class Employee {
     
@@ -34,41 +34,16 @@ public class Employee {
         this.hourlyRate = hourlyRate;
     }
 
+    // Getter Methods 
     public int getEmpNo() {return empNo;}
-    
     public String getLastName() {return lastName;}
-    public void setLastName(String lastName) {this.lastName = lastName;}
-
     public String getFirstName() {return firstName;}
-    public void setFirstName(String firstName) {this.firstName = firstName;}
-    
     public LocalDate getBirthday() {return birthday;}
-    public void setBirthday(LocalDate birthday) {this.birthday = birthday;}
-
     public double getHourlyRate() {return hourlyRate;}
+
+    // Setter Methods
+    public void setLastName(String lastName) {this.lastName = lastName;}
+    public void setFirstName(String firstName) {this.firstName = firstName;}
+    public void setBirthday(LocalDate birthday) {this.birthday = birthday;}
     public void setHourlyRate(double hourlyRate) {this.hourlyRate = hourlyRate;}
-    
-    
-    public String displayEmployeeInfo() {
-        
-        DateTimeFormatter birthdayFmt = DateTimeFormatter.ofPattern("MM//dd//yyyy");
-        
-        return """
-            ======== EMPLOYEE DETAILS ========
-
-            Employee Number    : %d
-            Employee Name      : %s, %s
-            Birthday           : %s
-            Hourly Rate        : %.2f
-
-            ===================================
-            """
-            .formatted(
-                    empNo,
-                    lastName,
-                    firstName,
-                    birthday.format(birthdayFmt),
-                    hourlyRate
-            );
-    }
 }
