@@ -395,6 +395,11 @@ public class MotorPHUI {
     private JComboBox<String> createMonthBox() {
 
         String[] months = {
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
             "June",
             "July",
             "August",
