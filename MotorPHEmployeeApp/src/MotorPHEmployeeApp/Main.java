@@ -6,7 +6,7 @@ package MotorPHEmployeeApp;
 
 /**
  *
- * @author Group 21
+ * @author Group21 - H1101
  */
 public class Main {
     
