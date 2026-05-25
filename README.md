@@ -1,5 +1,4 @@
 #Team Details:
-
 Jam Rosales
 
 Isabelle Gallardo
