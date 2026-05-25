@@ -52,14 +52,15 @@ public class Deductions {
     static final double BASE_TAX_3 = 40833.33;
     static final double BASE_TAX_4 = 200833.33;
 
-    public static double computeSSSContribution(double grossMonthlySalary) {
+    // SSS Monthly Contribution Computation
+    public static double computeSSSContribution(double grossSalary) {
 
-        if (grossMonthlySalary < 
+        if (grossSalary < 
                 SSS_LOWEST_SALARY_BRACKET) {
             
             return SSS_MIN_CONTRIBUTION; 
         }
-        if (grossMonthlySalary >= 
+        if (grossSalary >= 
                 SSS_HIGHEST_SALARY_BRACKET) {
             
             return SSS_MAX_CONTRIBUTION;
@@ -68,7 +69,7 @@ public class Deductions {
         //Start at minimum contribution and add PHP 22.50 for each PHP 500 increment. 
         double contribution = SSS_MIN_CONTRIBUTION;
         
-        for (double salary = SSS_LOWEST_SALARY_BRACKET; salary <= grossMonthlySalary; salary += SSS_SALARY_INCREMENT) {
+        for (double salary = SSS_LOWEST_SALARY_BRACKET; salary <= grossSalary; salary += SSS_SALARY_INCREMENT) {
             contribution += SSS_CONTRIBUTION_INCREMENT;
         }
         return contribution;
@@ -79,15 +80,15 @@ public class Deductions {
      * Salary At Least PHP 1000 to 1500 -> 1%, Capped at PHP 100
      * Salary Over PHP 1500             -> 2%, Capped at PHP 100
      */
-    public static double computePagIBIGContribution(double grossMonthlySalary) {
+    public static double computePagIBIGContribution(double grossSalary) {
         
-        if (grossMonthlySalary >= PAGIBIG_MIN_SALARY_THRESH && grossMonthlySalary <= PAGIBIG_MAX_SALARY_THRESH) {
+        if (grossSalary >= PAGIBIG_MIN_SALARY_THRESH && grossSalary <= PAGIBIG_MAX_SALARY_THRESH) {
             
-            return Math.min(grossMonthlySalary * PAGIBIG_EMP_MIN_CONTRIBUTION_RATE, PAGIBIG_MAX_CONTRIBUTION);
+            return Math.min(grossSalary * PAGIBIG_EMP_MIN_CONTRIBUTION_RATE, PAGIBIG_MAX_CONTRIBUTION);
             
-        } else if (grossMonthlySalary > PAGIBIG_MAX_SALARY_THRESH) {
+        } else if (grossSalary > PAGIBIG_MAX_SALARY_THRESH) {
             
-            return Math.min(grossMonthlySalary * PAGIBIG_EMP_MAX_CONTRIBUTION_RATE, PAGIBIG_MAX_CONTRIBUTION);
+            return Math.min(grossSalary * PAGIBIG_EMP_MAX_CONTRIBUTION_RATE, PAGIBIG_MAX_CONTRIBUTION);
             
         } else {
             return 0;
@@ -100,17 +101,17 @@ public class Deductions {
      * Salary Between PHP 10000 And PHP 60000 -> (Gross Salary * .03) / 2
      * Salary At Or Above PHP 60000           -> PHP 900 
      */
-    public static double computePhilHealthContribution(double grossMonthlySalary) {
+    public static double computePhilHealthContribution(double grossSalary) {
         
-        if (grossMonthlySalary <= PHILHEALTH_MIN_MO_BASIC_SALARY) {
+        if (grossSalary <= PHILHEALTH_MIN_MO_BASIC_SALARY) {
             return (PHILHEALTH_MIN_EMP_SHARE);
         } 
         
-        if (grossMonthlySalary >= PHILHEALTH_MAX_MO_BASIC_SALARY) {
+        if (grossSalary >= PHILHEALTH_MAX_MO_BASIC_SALARY) {
             return (PHILHEALTH_MAX_EMP_SHARE);
         } 
         
-        return (grossMonthlySalary * PHILHEALTH_PREM_RATE) / 2;  
+        return (grossSalary * PHILHEALTH_PREM_RATE) / 2;  
     }
 
     // Total Deductions Computation
@@ -124,10 +125,10 @@ public class Deductions {
 
     // Taxable Income Computation
     public static double computeTaxableIncome(
-            double grossMonthlySalary, 
+            double grossSalary, 
             double totalDeductions
     ) {
-        return grossMonthlySalary - totalDeductions;
+        return grossSalary - totalDeductions;
     }
     
     // Withholding tax computation based on the government-mandated deductions/contributions matrix.
