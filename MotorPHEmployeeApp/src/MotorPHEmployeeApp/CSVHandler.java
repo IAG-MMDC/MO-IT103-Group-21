@@ -14,9 +14,10 @@ import java.util.List;
 
 /**
  *
- * @author Home
+ * @author Group 21 - ComProg2 - H1101
  */
 public class CSVHandler {
+    
     private static final String EMP_CSV = "resources/MotorPH_Employee Data - Employee Details.csv";
     private static final String ATT_CSV = "resources/MotorPH_Employee Data - Attendance Record.csv";
 
@@ -106,7 +107,7 @@ public class CSVHandler {
         return attendanceList;
     }
     
-    //
+    // Find Employee
     public static Employee findEmployee(List<Employee> employeeList, int empID) {
 
         for (Employee employee : employeeList) {
