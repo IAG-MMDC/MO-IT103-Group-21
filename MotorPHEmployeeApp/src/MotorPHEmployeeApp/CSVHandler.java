@@ -107,7 +107,7 @@ public class CSVHandler {
         return attendanceList;
     }
     
-    //
+    // Find Employee
     public static Employee findEmployee(List<Employee> employeeList, int empID) {
 
         for (Employee employee : employeeList) {
