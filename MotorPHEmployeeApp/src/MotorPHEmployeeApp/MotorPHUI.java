@@ -41,11 +41,6 @@ public class MotorPHUI {
     private List<Attendance> attendanceList;
     private String currentUsername;
 
-    public static void main(String[] args) {
-
-        new MotorPHUI();
-    }
-
     public MotorPHUI() {
 
         employeeList = CSVHandler.readEmployeeFile();
