@@ -181,8 +181,8 @@ public class MotorPHUI {
 
         addAppTitle(panel, gbc);
         addCenteredText(panel, gbc, "Employee #: " + employee.getEmpNo());
-        addCenteredText(panel, gbc, "Last name: " + employee.getLastName());
-        addCenteredText(panel, gbc, "First name: " + employee.getFirstName());
+        addCenteredText(panel, gbc, "First Name: " + employee.getFirstName());
+        addCenteredText(panel, gbc, "Last Name: " + employee.getLastName());
         addCenteredText(panel, gbc, "Birthday: " + employee.getBirthday());
         addCenteredText(panel, gbc, String.format("Hourly Rate: %.2f", employee.getHourlyRate()));
 
