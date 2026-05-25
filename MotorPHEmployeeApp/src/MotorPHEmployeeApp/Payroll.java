@@ -15,7 +15,8 @@ import java.util.List;
  * @author Group21 - H1101
  */
 public class Payroll {
-      private static final int MAX_WORKING_MINS = 540;
+      
+    private static final int MAX_WORKING_MINS = 540;
     private static final int LUNCH_BREAK_MINS = 60;
     private static final int MINS_PER_HOUR = 60;
 
