@@ -160,7 +160,7 @@ public class Payroll {
 
             // Return Payslip
             return  """
-                    ======== MOTORPH PAYSLIP ========
+                    =========== MOTORPH PAYSLIP ===========
                     
                     Employee Number : %d
                     Employee Name   : %s %s
@@ -169,7 +169,7 @@ public class Payroll {
                     Hourly Rate     : %.2f
                     Gross Salary    : %.2f
                     
-                    ========== DEDUCTIONS ==========
+                    ============= DEDUCTIONS ==============
                     
                     SSS             : %.2f
                     PhilHealth      : %.2f
