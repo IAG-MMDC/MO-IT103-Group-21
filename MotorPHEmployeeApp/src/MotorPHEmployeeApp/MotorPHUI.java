@@ -47,7 +47,7 @@ public class MotorPHUI {
         attendanceList = CSVHandler.readAttendanceFile();
         image = new ImageIcon("logo.png");
 
-        frame = new JFrame("MotorPH Payroll App");
+        frame = new JFrame("MotorPH Employee App");
         frame.setMinimumSize(new Dimension(620, 430));
         frame.setIconImage(image.getImage());
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -455,7 +455,7 @@ public class MotorPHUI {
 
     private void addAppTitle(JPanel panel, GridBagConstraints gbc) {
 
-        JLabel title = new JLabel("MotorPH Payroll App");
+        JLabel title = new JLabel("MotorPH Employee App");
         title.setHorizontalAlignment(JLabel.CENTER);
         title.setFont(new Font("Segoe UI", Font.BOLD, 12));
         panel.add(title, gbc);
