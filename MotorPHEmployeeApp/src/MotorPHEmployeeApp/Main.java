@@ -12,7 +12,7 @@ public class Main {
     
     public static void main(String[] args) {
 
-        // Launching MotorPHUI Here
+        // Launch MotorPHUI Here
         new MotorPHUI();
     }
 }
