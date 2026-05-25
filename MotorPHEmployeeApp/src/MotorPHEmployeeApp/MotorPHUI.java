@@ -22,7 +22,7 @@ import javax.swing.JTextField;
 
 /**
  *
- * @author Home
+ * @author Group21 - H1101
  */
 public class MotorPHUI {
     
