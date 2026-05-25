@@ -4,7 +4,6 @@
  */
 package MotorPHEmployeeApp;
 
-import java.time.Duration;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
@@ -26,14 +25,14 @@ public class Attendance {
         this.logOut = logOut;
     }
 
+    // Getter Methods
     public int getEmpNo() {return empNo;}
-
     public LocalDate getDate() {return date;}
-    public void setDate(LocalDate date) {this.date = date;}
-    
     public LocalTime getLogIn() {return logIn;}
-    public void setLogIn(LocalTime logIn) {this.logIn = logIn;}
-    
     public LocalTime getLogOut() {return logOut;}
+
+    // Setter Methods
+    public void setDate(LocalDate date) {this.date = date;}
+    public void setLogIn(LocalTime logIn) {this.logIn = logIn;}
     public void setLogOut(LocalTime logOut) {this.logOut = logOut;}
 }
