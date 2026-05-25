@@ -302,7 +302,7 @@ public class MotorPHUI {
                 payslips.add(generatePayslip(employee, monthBox, coverageBox));
             }
 
-            showPayrollResult(String.join("\n\n========================================\n\n", payslips), "payroll-all");
+            showPayrollResult(String.join("\n=======================================\n\n", payslips), "payroll-all");
         });
 
         backBtn.addActionListener(e -> cardLayout.show(rootPanel, "payroll-choice"));
