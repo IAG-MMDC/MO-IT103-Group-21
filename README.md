@@ -4,11 +4,7 @@ Jam Rosales
 
 Isabelle Gallardo
 
-Jyvs Aycardo
-
 Kristel Austria
-
-Sharlyn Motas
 
 # Program Details:
 
