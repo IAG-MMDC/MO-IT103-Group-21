@@ -1,20 +1,18 @@
-# Team Details:
+# Team Details
 
-Jam Rosales
+- Jam Rosales
+- Isabelle Gallardo
+- Kristel Austria
 
-Isabelle Gallardo
+---
 
-Kristel Austria
-
-# Program Details:
-
-MotorPH Employee App
+# MotorPH Employee App
 
 ## Project Overview
 
-The MotorPH Employee App is a Java desktop application developed using Java Swing in NetBeans. It provides a file-based employee management and payroll processing system for MotorPH. Employee and attendance records are stored in CSV files, allowing the application to manage data without requiring a database.
+The MotorPH Employee App is a Java desktop application developed using Java Swing and Apache NetBeans. The system provides a file-based employee management and payroll processing solution for MotorPH. Employee and attendance information is stored using CSV files, eliminating the need for a database while allowing efficient management of employee records and payroll information.
 
-The project was developed as part of the MotorPH Payroll System activities and includes employee record management, payroll computation, payroll summary generation, and CSV export functionality.
+The application supports employee management, payroll processing, payroll summary generation, and payroll summary export to CSV.
 
 ---
 
@@ -22,16 +20,16 @@ The project was developed as part of the MotorPH Payroll System activities and i
 
 ## Prerequisites
 
-Before running the application, make sure you have the following installed:
+Before running the application, ensure the following software is installed:
 
 - Java Development Kit (JDK) 23 or later
 - Apache NetBeans IDE 24 (or any IDE that supports Maven projects)
-- Git (optional, for cloning the repository)
+- Git (optional)
 
 ## Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/MotorPHEmployeeApp.git
+git clone https://github.com/IAG-MMDC/MO-IT103-Group-21.git
 ```
 
 Or download the repository as a ZIP file and extract it.
@@ -40,13 +38,13 @@ Or download the repository as a ZIP file and extract it.
 
 1. Open **Apache NetBeans IDE**.
 2. Select **File > Open Project**.
-3. Browse to the extracted **MotorPHEmployeeApp** folder.
-4. Click **Open Project**.
-5. Wait for Maven to download the required dependencies (if prompted).
+3. Open the folder named **MotorPHEmployeeApp_Final_v1**.
+4. Wait for NetBeans/Maven to load the project dependencies (if prompted).
+5. Once the project loads successfully, it is ready to run.
 
 ## Run the Application
 
-1. Right-click the project.
+1. Right-click **MotorPHEmployeeApp_Final_v1** in the Projects window.
 2. Select **Run** (or press **F6**).
 3. The login window will appear.
 
@@ -96,33 +94,40 @@ employee
 
 ## Payroll Staff
 
-After logging in as **Payroll Staff**, you can access:
-
 ### Employee Management
 
 - View employee records
-- Add employees
+- Add employee records
 - Update employee information
 - Delete employee records
-- Search employees
+- Search employees by Employee Number
+- Validate employee information
+- Prevent duplicate Employee Numbers
 
 ### Payroll Processing
 
-- Generate payroll
-- Calculate salaries and government deductions
+- Search employee records
+- Process payroll for an individual employee
+- Process payroll for all employees
+- Calculate government deductions
+- Generate payroll results
 
 ### Payroll Summary
 
-- Generate payroll statistics
+- Display payroll statistics
+- Display total employees processed
+- Display total gross pay
+- Display total deductions
+- Display average net pay
 - Export payroll summary to CSV
 
 ---
 
 ## Employee
 
-After logging in as an **Employee**, you can:
+Employees can:
 
-- View employee information
+- View personal information
 - View payroll details
 - Log out of the application
 
@@ -130,11 +135,11 @@ After logging in as an **Employee**, you can:
 
 # CSV Files
 
-This application uses CSV files for data storage.
+The application uses CSV files as its primary data storage.
 
-The application reads employee and attendance records from CSV files included with the project.
+The system reads employee and attendance information from CSV files included with the project.
 
-The application can also export:
+The application can also generate:
 
 - Payroll Summary CSV
 
@@ -142,9 +147,9 @@ The application can also export:
 
 # Notes
 
-- This application is file-based and does not require a database.
-- Do not rename or remove the CSV files while the application is running.
-- Close spreadsheet applications (such as Microsoft Excel or WPS Office) before modifying or exporting CSV files to avoid file access errors.
+- This application uses CSV files and does not require a database.
+- Do not rename or delete the CSV files while the application is running.
+- Close spreadsheet applications (such as Microsoft Excel or WPS Office) before editing or exporting CSV files to avoid file access conflicts.
 
 ---
 
@@ -157,7 +162,7 @@ The application validates:
 - Duplicate Employee Number
 - Birthday format
 - Phone Number
-- Government IDs
+- Government ID numbers
 - Numeric salary fields
 
 ---
@@ -167,6 +172,7 @@ The application validates:
 The application generates:
 
 - Employee Directory
+- Payroll Results
 - Payroll Summary
 - Payroll Summary CSV
 
@@ -183,8 +189,8 @@ The application generates:
 ## Employee Management
 
 - View employee records
-- Add new employees
-- Update employee information
+- Add employee records
+- Update employee records
 - Delete employee records
 - Search employee by Employee Number
 - Input validation
@@ -202,7 +208,7 @@ The application generates:
 
 ## Payroll Summary
 
-- Display total number of employees
+- Display total employees processed
 - Display total gross pay
 - Display total deductions
 - Display average net pay
@@ -228,16 +234,25 @@ The application generates:
 - MVC-inspired package organization (Model, Service, View)
 - File-Based Data Management
 - Input Validation
+- Exception Handling
 
 ---
 
 # Future Improvements
 
 - MySQL database integration
-- Role-based access control
+- Enhanced role-based access control
 - Attendance management module
-- PDF payslip generation
-- Reports and analytics dashboard
+- PDF payroll reports
+- Analytics dashboard
+
+---
+
+# Repository
+
+GitHub Repository:
+
+https://github.com/IAG-MMDC/MO-IT103-Group-21
 
 ---
 
@@ -250,3 +265,5 @@ The application generates:
 - Kristel Austria
 
 Bachelor of Science in Information Technology
+
+MotorPH Employee App
