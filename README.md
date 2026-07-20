@@ -79,7 +79,7 @@ How to Run
 
 ---
 
-CSV Files
+## CSV Files
 
 The application uses CSV files for persistent storage.
 
