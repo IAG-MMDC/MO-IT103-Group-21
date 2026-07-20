@@ -145,49 +145,6 @@ Payroll summaries can also be exported as:
 - Close any spreadsheet application (such as Excel or WPS Office) before modifying or exporting CSV files to avoid file access errors.
 ---
 
-## CSV Files
-
-The application uses CSV files for persistent storage.
-
-Employee File
-
-Contains:
-
-- Employee Number
-- Employee Information
-- Position
-- Salary Information
-- Government IDs
-
-Attendance File
-
-Contains:
-
-- Employee Number
-- Date
-- Time In
-- Time Out
-
----
-
-## Payroll Computation
-
-The application computes:
-
-Gross Salary
-
-= Hours Worked × Hourly Rate
-
-Total Deductions
-
-= SSS + PhilHealth + Pag-IBIG + Withholding Tax
-
-Net Salary
-
-= Gross Salary − Total Deductions
-
----
-
 ## Input Validation
 
 The application validates:
