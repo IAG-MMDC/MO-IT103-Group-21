@@ -18,9 +18,9 @@ The project was developed as part of the MotorPH Payroll System activities and i
 
 ---
 
-## Installation and Setup
+# Installation and Setup
 
-### Prerequisites
+## Prerequisites
 
 Before running the application, make sure you have the following installed:
 
@@ -28,15 +28,15 @@ Before running the application, make sure you have the following installed:
 - Apache NetBeans IDE 24 (or any IDE that supports Maven projects)
 - Git (optional, for cloning the repository)
 
-### Clone the Repository
+## Clone the Repository
 
 ```bash
 git clone https://github.com/<your-username>/MotorPHEmployeeApp.git
 ```
 
-Or download the project as a ZIP file and extract it.
+Or download the repository as a ZIP file and extract it.
 
-### Open the Project
+## Open the Project
 
 1. Open **Apache NetBeans IDE**.
 2. Select **File > Open Project**.
@@ -44,7 +44,7 @@ Or download the project as a ZIP file and extract it.
 4. Click **Open Project**.
 5. Wait for Maven to download the required dependencies (if prompted).
 
-### Run the Application
+## Run the Application
 
 1. Right-click the project.
 2. Select **Run** (or press **F6**).
@@ -52,11 +52,11 @@ Or download the project as a ZIP file and extract it.
 
 ---
 
-## Login Credentials
+# Login Credentials
 
 The application provides two user roles.
 
-### Payroll Staff
+## Payroll Staff
 
 Use this account to access employee management, payroll processing, and payroll summary features.
 
@@ -74,9 +74,9 @@ payroll_staff
 
 ---
 
-### Employee
+## Employee
 
-Use this account to access the employee dashboard and view payroll information.
+Use this account to access employee information and payroll details.
 
 **Username**
 
@@ -92,91 +92,96 @@ employee
 
 ---
 
-## Application Modules
+# Application Modules
 
-### Payroll Staff
+## Payroll Staff
 
 After logging in as **Payroll Staff**, you can access:
 
-- Employee Management
-  - View employee records
-  - Add employees
-  - Update employee information
-  - Delete employee records
-  - Search employees
-- Payroll Processing
-  - Generate employee payslips
-  - Calculate salary and deductions
-- Payroll Summary
-  - Generate payroll statistics
-  - Export payroll summary to CSV
+### Employee Management
 
-### Employee
+- View employee records
+- Add employees
+- Update employee information
+- Delete employee records
+- Search employees
+
+### Payroll Processing
+
+- Generate payroll
+- Calculate salaries and government deductions
+
+### Payroll Summary
+
+- Generate payroll statistics
+- Export payroll summary to CSV
+
+---
+
+## Employee
 
 After logging in as an **Employee**, you can:
 
 - View employee information
 - View payroll details
-- Generate and view payslips
 - Log out of the application
 
 ---
 
-## CSV Files
+# CSV Files
 
 This application uses CSV files for data storage.
 
-The required files are located in the project's **resources** directory.
+The application reads employee and attendance records from CSV files included with the project.
 
-- Employee Details CSV
-- Attendance Record CSV
+The application can also export:
 
-Payroll summaries can also be exported as:
-
-- Payroll_Summary.csv
+- Payroll Summary CSV
 
 ---
 
-## Notes
+# Notes
 
 - This application is file-based and does not require a database.
-- Ensure the CSV files remain in the project's resources folder.
 - Do not rename or remove the CSV files while the application is running.
-- Close any spreadsheet application (such as Excel or WPS Office) before modifying or exporting CSV files to avoid file access errors.
+- Close spreadsheet applications (such as Microsoft Excel or WPS Office) before modifying or exporting CSV files to avoid file access errors.
+
 ---
 
-## Input Validation
+# Input Validation
 
 The application validates:
 
 - Required fields
-- Numeric salary fields
 - Employee Number
+- Duplicate Employee Number
 - Birthday format
 - Phone Number
 - Government IDs
-- Duplicate Employee Number
+- Numeric salary fields
 
 ---
-## Output
+
+# Output
 
 The application generates:
 
 - Employee Directory
-- Employee Payslip
 - Payroll Summary
 - Payroll Summary CSV
 
 ---
 
-## Features
+# Features
 
-User Authentication
+## User Authentication
+
 - User login
 - Dashboard navigation
 - Logout functionality
 
-Employee Management
+## Employee Management
+
 - View employee records
 - Add new employees
 - Update employee information
@@ -185,7 +190,8 @@ Employee Management
 - Input validation
 - Duplicate Employee Number checking
 
-Payroll Processing
+## Payroll Processing
+
 - Calculate hours worked
 - Compute Gross Salary
 - Compute SSS Contribution
@@ -193,9 +199,9 @@ Payroll Processing
 - Compute Pag-IBIG Contribution
 - Compute Withholding Tax
 - Compute Total Deductions
-- Generate Employee Payslip
 
-Payroll Summary
+## Payroll Summary
+
 - Display total number of employees
 - Display total gross pay
 - Display total deductions
@@ -204,41 +210,43 @@ Payroll Summary
 
 ---
 
-## Technologies Used
+# Technologies Used
 
 - Java
 - Java Swing
 - Apache NetBeans IDE
 - Maven
 - CSV File Handling
-- Git & GitHub
+- Git
+- GitHub
 
 ---
 
-## Programming Concepts
+# Programming Concepts
 
 - Object-Oriented Programming (OOP)
-- File-Based Data Management
 - MVC-inspired package organization (Model, Service, View)
+- File-Based Data Management
 - Input Validation
 
 ---
 
-## Future Improvements
+# Future Improvements
 
-- Database integration (MySQL)
-- User role management
+- MySQL database integration
+- Role-based access control
 - Attendance management module
 - PDF payslip generation
 - Reports and analytics dashboard
 
 ---
 
-## Author
+# Authors
 
-Developed by: Group 21
+**Group 21**
+
+- Jam Rosales
+- Isabelle Gallardo
+- Kristel Austria
 
 Bachelor of Science in Information Technology
-
-MotorPH Payroll System Project
-
