@@ -38,7 +38,7 @@ Or download the repository as a ZIP file and extract it.
 
 1. Open **Apache NetBeans IDE**.
 2. Select **File > Open Project**.
-3. Open the folder named **MotorPHEmployeeApp_Final_v1**.
+3. Open the folder named **MotorPHEmployeeApp_TA_Final.zip**.
 4. Wait for NetBeans/Maven to load the project dependencies (if prompted).
 5. Once the project loads successfully, it is ready to run.
 
