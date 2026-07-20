@@ -18,7 +18,7 @@ The project was developed as part of the MotorPH Payroll System activities and i
 
 ---
 
-Features
+## Features
 
 User Authentication
 - User login
@@ -53,7 +53,7 @@ Payroll Summary
 
 ---
 
-Technologies Used
+## Technologies Used
 
 - Java
 - Java Swing
@@ -63,7 +63,7 @@ Technologies Used
 
 ---
 
-Project Structure
+## Project Structure
 
 
 ---
@@ -104,7 +104,7 @@ Contains:
 
 ---
 
-Payroll Computation
+## Payroll Computation
 
 The application computes:
 
@@ -122,7 +122,7 @@ Net Salary
 
 ---
 
-Input Validation
+## Input Validation
 
 The application validates:
 
@@ -135,7 +135,7 @@ The application validates:
 - Duplicate Employee Number
 
 ---
-Output
+## Output
 
 The application generates:
 
@@ -146,7 +146,7 @@ The application generates:
 
 ---
 
-Future Improvements
+## Future Improvements
 
 - Database integration (MySQL)
 - User role management
@@ -156,7 +156,7 @@ Future Improvements
 
 ---
 
-Author
+## Author
 
 Developed by: Group 21
 
