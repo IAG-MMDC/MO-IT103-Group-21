@@ -10,7 +10,7 @@ Kristel Austria
 
 MotorPH Employee App
 
-Project Overview
+## Project Overview
 
 The MotorPH Employee App is a Java desktop application developed using Java Swing in NetBeans. It provides a file-based employee management and payroll processing system for MotorPH. Employee and attendance records are stored in CSV files, allowing the application to manage data without requiring a database.
 
