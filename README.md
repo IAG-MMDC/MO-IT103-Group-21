@@ -18,15 +18,131 @@ The project was developed as part of the MotorPH Payroll System activities and i
 
 ---
 
-How to Run
+## Installation and Setup
 
-1. Open the project in NetBeans.
-2. Ensure the CSV files are located inside the `resources` folder.
-3. Build the project.
-4. Run `Main.java`.
-5. Log in using the configured credentials.
-6. Navigate through the application using the dashboard.
+### Prerequisites
 
+Before running the application, make sure you have the following installed:
+
+- Java Development Kit (JDK) 23 or later
+- Apache NetBeans IDE 24 (or any IDE that supports Maven projects)
+- Git (optional, for cloning the repository)
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/<your-username>/MotorPHEmployeeApp.git
+```
+
+Or download the project as a ZIP file and extract it.
+
+### Open the Project
+
+1. Open **Apache NetBeans IDE**.
+2. Select **File > Open Project**.
+3. Browse to the extracted **MotorPHEmployeeApp** folder.
+4. Click **Open Project**.
+5. Wait for Maven to download the required dependencies (if prompted).
+
+### Run the Application
+
+1. Right-click the project.
+2. Select **Run** (or press **F6**).
+3. The login window will appear.
+
+---
+
+## Login Credentials
+
+The application provides two user roles.
+
+### Payroll Staff
+
+Use this account to access employee management, payroll processing, and payroll summary features.
+
+**Username**
+
+```text
+payroll_staff
+```
+
+**Password**
+
+```text
+12345
+```
+
+---
+
+### Employee
+
+Use this account to access the employee dashboard and view payroll information.
+
+**Username**
+
+```text
+employee
+```
+
+**Password**
+
+```text
+12345
+```
+
+---
+
+## Application Modules
+
+### Payroll Staff
+
+After logging in as **Payroll Staff**, you can access:
+
+- Employee Management
+  - View employee records
+  - Add employees
+  - Update employee information
+  - Delete employee records
+  - Search employees
+- Payroll Processing
+  - Generate employee payslips
+  - Calculate salary and deductions
+- Payroll Summary
+  - Generate payroll statistics
+  - Export payroll summary to CSV
+
+### Employee
+
+After logging in as an **Employee**, you can:
+
+- View employee information
+- View payroll details
+- Generate and view payslips
+- Log out of the application
+
+---
+
+## CSV Files
+
+This application uses CSV files for data storage.
+
+The required files are located in the project's **resources** directory.
+
+- Employee Details CSV
+- Attendance Record CSV
+
+Payroll summaries can also be exported as:
+
+- Payroll_Summary.csv
+
+---
+
+## Notes
+
+- This application is file-based and does not require a database.
+- Ensure the CSV files remain in the project's resources folder.
+- Do not rename or remove the CSV files while the application is running.
+- Close any spreadsheet application (such as Excel or WPS Office) before modifying or exporting CSV files to avoid file access errors.
 ---
 
 ## CSV Files
